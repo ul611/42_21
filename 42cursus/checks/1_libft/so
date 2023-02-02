@@ -1,0 +1,4 @@
+so:			$(OBJS) $(OBJSBONUS) $(HDR)
+			gcc -fPIC $(FLAGS) -c $(SRCSBONUS) $(SRCS)
+			gcc -shared -o libft.so $(OBJS) $(OBJSBONUS)
+
